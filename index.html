@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+      <style>
+        fieldset:hover{color: palevioletred;}
+        tr:active{color: plum;}
+        input:focus{color: blue;}
+        input:checked+label{color: brown; font-size: 30px;  font-weight: bold;}
+
+        legend{font-size: 40px;
+              font-weight: bolder; color: darkgreen;
+            font-family:'koruri', normal, 'NanumSquare', normal; font-style: italic;} /* https://blog.gaerae.com/2018/07/japanese-punctuation.html */
+        
+        
+      
+              
+
+      </style>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML practice</title>
+      </head>
+    <body>
+      
+      <a href="https://topcoat.co.jp/masaki_suda">
+        <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzEyMTRfOCAg%2FMDAxNzAyNTMzNTE0MDAy.v9drgnR94xVvwIWJA2jirKiaDkOifdO4bxF3QUKSRCEg.hivR6kUtQzx1eNkBrbYexRynlyoyekeoD-XutEDIh94g.JPEG.coolandwise%2FEaE.jpg&type=sc960_832" alt="스다 마사키">
+      </a>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>お好きなものは何ですか?</legend>
+          <p>
+            <label for="title">果物
+              <p>
+              <select name="fruit" id="fruit" size="3" >
+                <option value="apple">リンゴ</option>
+                <option value="banana">バナナ</option>
+                <option value="kiwi">キーウィ</option>
+                <option value="Grapefruit" selected>グレープフルーツ</option>
+              </select>
+              <button type="submit">
+                <img src="facebook.png" alt="ツイッターに移動"> <!--페이스북이미지는 사실 없긴 함-->
+                ツイッターのスポンジ·ボブ
+              </button>
+              </p>
+            </label>
+          </p>
+        </fieldset>
+      <p>
+        <fieldset>
+          <legend>あなたの一番好きなフィルモグラフィーは？</legend>
+          <input type="checkbox" id="花束のような恋をした" name="花束のような恋をした" value="花束のような恋をした" style="text-align: center;">
+          <label for="花束のような恋をした" style="text-decoration: underline;">花束のような恋をした</label><br>
+          <input type="checkbox" id="ミステリと言う勿れ" name="ミステリと言う勿れ" value="ミステリと言う勿れ">
+          <label for="ミステリと言う勿れ">ミステリと言う勿れ</label>
+
+          <audio src="C:/Users/User/OneDrive/바탕 화면/킹누_카멜레온_오디오.mp3" controls></audio><br>
+          
+          <input type="checkbox" id="ミ地味にスゴイ! 校閲ガール・河野悦子" name="地味にスゴイ! 校閲ガール・河野悦子" value="地味にスゴイ! 校閲ガール・河野悦子">
+          <label for="地味にスゴイ! 校閲ガール・河野悦子">地味にスゴイ! 校閲ガール・河野悦子</label>
+          <p>
+            "お望みの答えがなければ主観式で答えてください"<br>
+            <input placeholder="あなたの一番好きなフィルモグラフィーは？">
+          </p>
+        </fieldset>
+      </form> 
+    </p>     
+    </body>
+    <p>
+    <table>
+      <caption>あなたの一番好きなフィルモグラフィーは？</caption>
+      <colgroup span="2" style="width:300px"></colgroup>
+      <tr>
+        <thead>
+        <th scope="col">ロマンス</th>
+        <th scope="col">そのた</th>
+        </thead>
+      </tr>
+      <tr>
+        <tfoot>
+          <td>主人の好きな作品</td>
+          <td colspan="2">地味にスゴイ! 校閲ガール・河野悦子</td>
+        </tfoot>
+      </tr>
+      <tr>
+        <tbody>
+        <td>花束のような恋をした</td>
+        <td>ミステリと言う勿れ</td>
+      </tr>
+      <tr>
+        <td>地味にスゴイ! 校閲ガール・河野悦子</td>
+        <td>ぎんたま</td>
+      </tr>
+      </tbody>
+    </table>
+   
+</html>
